@@ -1,27 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {connect} from 'react-redux';
+import { Layout } from 'antd';
 
+import HeaderC from './components/Layout/Header';
+import FooterC from './components/Layout/Footer';
+import MusicList from './components/MusicList';
+
+const { Header, Footer, Content } = Layout;
 
 function App({music}) {
-  console.log(process.env.REACT_APP_CODE+'SADSD');
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Layout className='app'>
+        <Header className='header'> <HeaderC/> </Header>
+          <Content className='content'><MusicList/></Content>
+        <Footer className='footer'><FooterC/></Footer>
+    </Layout>
   );
 }
 
