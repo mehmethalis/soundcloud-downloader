@@ -7,7 +7,7 @@ const Header=()=>{
     return(
         <Container  className='header-container'>
             <Row className='header-row'>
-                <Col><Search className='search-box' size='large'  prefix={icon} placeholder='Find your music...' enterButton /></Col>
+                <Col><Search className='search-box' size='large'  prefix={icon} placeholder='SoundCloud Music Link...' enterButton /></Col>
             </Row>
         </Container>
     )

@@ -1,3 +1,6 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
 .header{
   color: white!important;
 }
@@ -12,14 +15,27 @@
   text-align: center;
 }
 .header-row i{
+  color: #1890ff;
   font-size:20px;
 }
 
 .content{
   background-color: white;
-  padding: 20px;
+  padding: 50px 10%;
 }
+
+.content-row{
+ 
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 10% 0px 10%;
+ 
+}
+
 .footer{
+  position: absolute;
+  width: 100%;
+  bottom:0;
   color: white!important;
   background-color: #001529!important;
 }
@@ -28,4 +44,28 @@
   vertical-align: middle;
   padding: 0 10%;
   text-align: center;
+}
+.sound-em{
+  font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;
+}
+.sound-em-i{
+  color: #cccccc; text-decoration: none;
+}
+
+.music-size{
+  color: #001529;
+  margin-top: 5px;
+}
+
+.music-title{
+  margin-left: 5px;
+  margin-bottom: 15px;
+ text-align: start;
+}
+
+.music-meta{
+  border-radius: 15px 15px ;
+  padding: 25px;
+  color: #001529;
+
 }
