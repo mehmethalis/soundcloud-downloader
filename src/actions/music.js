@@ -1,16 +1,39 @@
-import { API_BASE } from '../config/env';
-import axios from 'axios';
+import unirest from 'unirest';
 
-export const FETCH_MOVIES_PENDING = "FETCH_MOVIES_PENDING";
-export const FETCH_MOVIES_FULFILLED = "FETCH_MOVIES_FULFILLED";
-export const FETCH_MOVIES_REJECTED = "FETCH_MOVIES_REJECTED";
+export const UPDATE_MUSIC = 'UPDATE_MUSIC';
+export const GET_MUSIC_ERROR = 'GET_MUSIC_ERROR';
 
-export function fetchMovies(){
-	return dispatch => {
-		dispatch({
-			type: "FETCH_MOVIES",
-			payload: axios.get(`${API_BASE}/movies`)
-				.then(result => result.data.movies)
-		})
+export function updateMusic(newMusic) {
+	return {
+		type: UPDATE_MUSIC,
+		payload: {
+			music: newMusic
+		}
+	}
+}
+
+export function getMusic(link) {
+	return async dispatch => {
+		try {
+			let req = unirest("GET", "https://getvideo.p.rapidapi.com/");
+
+			req.query({
+				"url": link
+			});
+
+			req.headers({
+				"x-rapidapi-host": "getvideo.p.rapidapi.com",
+				"x-rapidapi-key": "8aba0d461emshd735dadab1e1d48p1634bcjsna19fd88010eb",
+				"useQueryString": true
+			});
+			await req.end((res)=>{
+				console.log(res.body)
+				dispatch(updateMusic(res.body));
+			});
+			
+			
+		} catch (e) {
+			console.log(e);
+		}
 	}
 }

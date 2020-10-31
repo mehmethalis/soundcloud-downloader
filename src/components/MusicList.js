@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 
+
 class MusicList extends Component {
   render() {
     return (
@@ -26,15 +27,9 @@ class MusicList extends Component {
                   </Button>
                   <h6 className='music-size'>11.2MB</h6>
                 </Col>
-               
               </Row>
-
-
-
             </div>
-
           </Col>
-
         </Row>
       </Container>
 

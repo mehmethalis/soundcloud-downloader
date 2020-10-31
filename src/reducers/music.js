@@ -1,16 +1,18 @@
-
+import {UPDATE_MUSIC} from '../actions/music';
 const initialState={
     fetching: false,
-	musicList: [],
+	musicList: {},
 	error: {}
 }
 
-const music=(state=initialState,action)=>{
-    switch (action.type) {
-        case action.type:
-        default:
-            return state;
-    }
+const music=(state=initialState,{ type, payload })=>{
+    switch(type){
+		case UPDATE_MUSIC:
+            return {...state,musicList:payload.music}
+            
+		default:
+			return state;
+	}
 }
 
 export default music;
