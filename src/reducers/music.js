@@ -1,7 +1,13 @@
 import {UPDATE_MUSIC} from '../actions/music';
 const initialState={
     fetching: false,
-	musicList: {},
+	musicList: {
+		title:"Hemsaye - Rüya",
+		id:"710449648",
+		uploaderUri:"https://soundcloud.com/hemsaye",
+		uploader:"Hemsaye",
+		url:"https://soundcloud.com/hemsaye/ruya-hemsaye"
+	},
 	error: {}
 }
 

@@ -22,7 +22,6 @@ class Header extends Component {
     handleSubmit() {
         this.props.getMusic(this.state.value);
         this.setState({value:''});
-      
       }
    
     render() {

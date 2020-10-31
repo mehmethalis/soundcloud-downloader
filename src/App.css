@@ -1,7 +1,19 @@
 *{
   font-family: 'Montserrat', sans-serif;
+  
+}
+
+h3,h6{
+  color: white!important;
 }
 .header{
+  background-color:rgb(0, 21, 41,0.7)!important;
+  background-image: url('http://localhost:3000/image/back.jpg')!important;
+  background-repeat: 'no-repeat'!important;
+  object-fit: cover;
+  background-size: cover;
+  background-position: top!important;
+
   color: white!important;
 }
 .header-container{
@@ -9,7 +21,7 @@
 }
 
 .header-row{
-
+  
   vertical-align: middle;
   padding: 10px 10% 0px 10%;
   text-align: center;
@@ -20,9 +32,18 @@
 }
 
 .content{
-  background-color: white;
+
+  background-color: black;
+  background:url('http://localhost:3000/image/back.jpg');
+  background-repeat: 'no-repeat'!important;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  height: 82vh;
+  
   padding: 50px 10%;
 }
+
 
 .content-row{
  
@@ -37,7 +58,13 @@
   width: 100%;
   bottom:0;
   color: white!important;
-  background-color: #001529!important;
+  background-color:rgb(0, 21, 41,0.7)!important;
+  background-image: url('http://localhost:3000/image/back.jpg')!important;
+  background-repeat: 'no-repeat'!important;
+  object-fit: cover;
+  background-size: cover;
+  background-position: bottom!important;
+
 }
 .footer-row{
   

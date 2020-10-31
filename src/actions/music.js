@@ -27,7 +27,6 @@ export function getMusic(link) {
 				"useQueryString": true
 			});
 			await req.end((res)=>{
-				console.log(res.body)
 				dispatch(updateMusic(res.body));
 			});
 			

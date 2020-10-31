@@ -11,13 +11,15 @@ import MusicList from './components/MusicList';
 
 const { Header, Footer, Content } = Layout;
 function App() {
- 
+
   return (
-      <Layout className='app'>
-        <Header className='header'> <HeaderC/> </Header>
-          <Content className='content'><MusicList/></Content>
-        <Footer className='footer'><FooterC/></Footer>
-    </Layout>
+      <Layout >
+        <Header className='header'> <HeaderC /> </Header>
+        <Content className='content'>
+          <MusicList />
+          </Content>
+        <Footer className='footer'><FooterC /></Footer>
+      </Layout>
   );
 }
 
