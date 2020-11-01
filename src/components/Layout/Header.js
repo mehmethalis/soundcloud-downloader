@@ -22,7 +22,7 @@ class Header extends Component {
     }
 
     handleSubmit() {
-        this.props.getMusic(this.state.value);
+        this.props.onGetMusic(this.state.value);
         this.setState({value:''});
       }
    
@@ -42,6 +42,6 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = {
-    getMusic: getMusic
+    onGetMusic: getMusic
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
