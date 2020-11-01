@@ -4,13 +4,9 @@ Find your music and download as mp3. React.js / Nodejs
 
 
 # Environment Variables - config/.env
-REACT_APP_API_KEY=XXXXXXXXXXXXXXXXX
-<a href='https://english.api.rakuten.net/Top-Rated/api/get-video-and-audio-url' target='_blank'>API WEB SITE</a>
+REACT_APP_API_KEY=XXXXXXXXXXXXXXXXX \
+[API WEB SITE](https://english.api.rakuten.net/Top-Rated/api/get-video-and-audio-url)
 
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
