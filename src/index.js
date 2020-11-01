@@ -9,6 +9,7 @@ import {createStore,applyMiddleware} from 'redux';
 import rootReducers from './reducers/rootReducers';
 import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
+import logger from 'redux-logger';
 import reduxPromise from 'redux-promise-middleware';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import {BrowserRouter} from 'react-router-dom';
@@ -17,7 +18,7 @@ import {BrowserRouter} from 'react-router-dom';
 dotenv.config();
 
 const store=createStore(rootReducers,composeWithDevTools(
-  applyMiddleware(reduxPromise, thunk)
+  applyMiddleware(reduxPromise, thunk,logger)
 ));
 
 

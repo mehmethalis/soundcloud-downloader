@@ -31,7 +31,7 @@ class Header extends Component {
         return (
             <Container className='header-container'>
                 <Row className='header-row'>
-                    <Col><Search onSearch={this.handleSubmit} onChange={this.handleChange} value={this.state.value} className='search-box' size='large' prefix={icon} placeholder='SoundCloud Music Link...' enterButton /></Col>
+                    <Col><Search onSearch={this.handleSubmit} onChange={this.handleChange} value={this.state.value} className='search-box' size='large' prefix={icon} placeholder='SoundCloud Müzik Linki...' enterButton /></Col>
                 </Row>
             </Container>
         )
