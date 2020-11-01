@@ -13,7 +13,7 @@ export function getMusic(link) {
 				params: { url: link },
 						headers: {
 							"x-rapidapi-host": "getvideo.p.rapidapi.com",
-							"x-rapidapi-key": "75ed2432a0msh2a4cc0c997df78fp1a8a24jsnf297df8f3534",
+							"x-rapidapi-key": process.env.REACT_APP_API_KEY,
 							"useQueryString": true
 						}
 			}).then(response =>response.data)

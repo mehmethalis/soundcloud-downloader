@@ -16,7 +16,7 @@ function App() {
       <Layout >
         <Header className='header'> <HeaderC /> </Header>
         <Content className='content'>
-          <MusicList />
+          <MusicList/>
           </Content>
         <Footer className='footer'><FooterC /></Footer>
       </Layout>

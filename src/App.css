@@ -109,6 +109,11 @@ h3,h6{
   color: #001529;
 
 }
+.loader{
+
+  margin: 5vh auto!important;
+  border-color: red;
+}
 
 .loaderTag{
   color: #001529!important;
@@ -120,7 +125,7 @@ h3,h6{
 .error{
   color:white;
   font-size: 20px;
-  margin:25px 35%;
+  margin:0 35%;
   text-align: center;
 }
 
