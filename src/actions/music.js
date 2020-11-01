@@ -23,10 +23,11 @@ export function getMusic(link) {
 
 			req.headers({
 				"x-rapidapi-host": "getvideo.p.rapidapi.com",
-				"x-rapidapi-key": "8aba0d461emshd735dadab1e1d48p1634bcjsna19fd88010eb",
+				"x-rapidapi-key": "75ed2432a0msh2a4cc0c997df78fp1a8a24jsnf297df8f3534",
 				"useQueryString": true
 			});
 			await req.end((res)=>{
+				console.log(res.body);
 				dispatch(updateMusic(res.body));
 			});
 			

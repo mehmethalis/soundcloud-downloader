@@ -1,4 +1,5 @@
 import {UPDATE_MUSIC} from '../actions/music';
+
 const initialState={
     fetching: false,
 	musicList: {
@@ -6,7 +7,10 @@ const initialState={
 		id:"710449648",
 		uploaderUri:"https://soundcloud.com/hemsaye",
 		uploader:"Hemsaye",
-		url:"https://soundcloud.com/hemsaye/ruya-hemsaye"
+		url:"https://soundcloud.com/hemsaye/ruya-hemsaye",
+		streams:[
+			{filesize:'',
+		url:'https://soundclouddownloader.org/downloads/mp3-3455077731079768-160422965293698.mp3'}]
 	},
 	error: {}
 }
