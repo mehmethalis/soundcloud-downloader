@@ -147,6 +147,12 @@ h6 {
         text-align: center;
     }
     .content {
+        background-color: black;
+        background: url('https://dinle.netlify.app/image/back.jpg');
+        background-repeat: 'no-repeat'!important;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
         padding: 25px;
     }
     .content-row {
