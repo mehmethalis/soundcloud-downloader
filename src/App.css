@@ -2,6 +2,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    min-height: 100%;
+}
+
 h3,
 h6 {
     color: white!important;
@@ -141,18 +145,25 @@ h6 {
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    body {
+        min-height: 100%;
+    }
+    .ant-layout-header {
+        padding: 0 10px!important;
+    }
     .header-row {
         vertical-align: middle;
         padding: 10px 0px 0px 0px;
         text-align: center;
     }
-    .content {
+    .ant-layout-content {
         background-color: black;
-        background: url('https://dinle.netlify.app/image/back.jpg');
-        background-repeat: 'no-repeat'!important;
-        object-fit: cover;
-        background-size: cover;
-        background-position: center;
+        background: url('https://dinle.netlify.app/image/back.jpg')!important;
+        object-fit: cover!important;
+        background-size: cover!important;
+        background-position: center!important;
+    }
+    .content {
         padding: 25px;
     }
     .content-row {
