@@ -1,137 +1,140 @@
-*{
-  font-family: 'Montserrat', sans-serif;
-  
+* {
+    font-family: 'Montserrat', sans-serif;
 }
 
-h3,h6{
-  color: white!important;
-}
-.header{
-  background-color:rgb(0, 21, 41,0.7)!important;
-  background-image: url('http://localhost:3000/image/back.jpg')!important;
-  background-repeat: 'no-repeat'!important;
-  object-fit: cover;
-  background-size: cover;
-  background-position: top!important;
-
-  color: white!important;
-}
-.header-container{
-  text-align: center;
+h3,
+h6 {
+    color: white!important;
 }
 
-.header-row{
-  
-  vertical-align: middle;
-  padding: 10px 10% 0px 10%;
-  text-align: center;
-}
-.header-row i{
-  color: #1890ff;
-  font-size:20px;
-}
-
-.content{
-
-  background-color: black;
-  background:url('http://localhost:3000/image/back.jpg');
-  background-repeat: 'no-repeat'!important;
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-  height: 83vh;
-  
-  padding: 50px 10%;
+.header {
+    background-color: rgb(0, 21, 41, 0.7)!important;
+    background-image: url('https://dinle.netlify.app/image/back.jpg')!important;
+    background-repeat: 'no-repeat'!important;
+    object-fit: cover;
+    background-size: cover;
+    background-position: top!important;
+    color: white!important;
 }
 
-
-.content-row{
- 
-  text-align: center;
-  vertical-align: middle;
-  padding: 10px 10% 0px 10%;
- 
+.header-container {
+    text-align: center;
 }
 
-.footer{
-  position: absolute;
-  width: 100%;
-  bottom:0;
-  color: white!important;
-  background-color:rgb(0, 21, 41,0.7)!important;
-  background-image: url('http://localhost:3000/image/back.jpg')!important;
-  background-repeat: 'no-repeat'!important;
-  object-fit: cover;
-  background-size: cover;
-  background-position: bottom!important;
-
-}
-.footer-row{
-  
-  vertical-align: middle;
-  padding: 0 10%;
-  text-align: center;
+.header-row {
+    vertical-align: middle;
+    padding: 10px 10% 0px 10%;
+    text-align: center;
 }
 
-.footer-link{
-  
-  position: absolute;
-  right: 20px;
-  float: right;
+.header-row i {
+    color: #1890ff;
+    font-size: 20px;
 }
 
-.footer-link a{
-  font-size: 20px;
-  margin-right: 15px;
+.content {
+    background-color: black;
+    background: url('https://dinle.netlify.app/image/back.jpg');
+    background-repeat: 'no-repeat'!important;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    height: 83vh;
+    padding: 50px 10%;
 }
 
-.sound-em{
-  font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;
-}
-.sound-em-i{
-  color: #cccccc; text-decoration: none;
-}
-
-.music-size{
-  color: #001529;
-  margin-top: 5px;
+.content-row {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 10% 0px 10%;
 }
 
-.music-title{
-  margin-left: 5px;
-  margin-bottom: 15px;
- text-align: start;
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: white!important;
+    background-color: rgb(0, 21, 41, 0.7)!important;
+    background-image: url('https://dinle.netlify.app/image/back.jpg')!important;
+    background-repeat: 'no-repeat'!important;
+    object-fit: cover;
+    background-size: cover;
+    background-position: bottom!important;
 }
 
-.music-meta{
-  border-radius: 15px 15px ;
-  padding: 25px;
-  color: #001529;
-
-}
-.loader{
-
-  margin: 5vh auto!important;
-  border-color: red;
+.footer-row {
+    vertical-align: middle;
+    padding: 0 10%;
+    text-align: center;
 }
 
-.loaderTag{
-  color: #001529!important;
-  font-size: 20px;
-  margin-top: 25px;
-  text-align: center;
+.footer-link {
+    position: absolute;
+    right: 20px;
+    float: right;
 }
 
-.error{
-  color:white;
-  font-size: 20px;
-  margin:0 35%;
-  text-align: center;
+.footer-link a {
+    font-size: 20px;
+    margin-right: 15px;
 }
 
-.error i{
-  margin-top: 20px;
-  font-size: 35px;
-  color: #001529;
-  display: block;
+.sound-em {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+}
+
+.sound-em-i {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.music-size {
+    color: #001529;
+    margin-top: 5px;
+}
+
+.music-title {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+.music-meta {
+    border-radius: 15px 15px;
+    padding: 25px;
+    color: #001529;
+}
+
+.loader {
+    margin: 5vh auto!important;
+    border-color: red;
+}
+
+.loaderTag {
+    color: #001529!important;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.error {
+    color: white;
+    font-size: 20px;
+    margin: 0 35%;
+    text-align: center;
+}
+
+.error i {
+    margin-top: 20px;
+    font-size: 35px;
+    color: #001529;
+    display: block;
 }
