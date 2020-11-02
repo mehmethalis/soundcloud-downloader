@@ -38,7 +38,6 @@ class MusicList extends Component {
                 <Button onClick={this.dowloand} type="primary" shape="round" icon={<DownloadOutlined />} size={'large'}>
                   Gerçek İndirme Butonu
               </Button>
-                <h6 className='music-size'>{this.props.state.music.musicList.streams[0].filesize_pretty}</h6>
               </Col>
             </Row>
           </div>
