@@ -11,7 +11,7 @@ const initialState = {
 		streams: [
 			{
 				filesize: '',
-				url: 'https://soundclouddownloader.org/downloads/mp3-3455077731079768-160422965293698.mp3'
+				url:'https://doc-0s-60-docs.googleusercontent.com/docs/securesc/4p572ih63d6b7mt0ljbp6f97s74itr6a/o8qmpbbs7tgb5abkmo53f1jtb5u3f0t2/1604320350000/08829262223383651302/08829262223383651302/1KH0vPmAYbjFuWBcTDtOD1Pef1PWX8ZUQ?e=download&authuser=0&nonce=7e4i61fljsa3k&user=08829262223383651302&hash=2i7u30gns1ubq09ankses9sk4jpg8vli'
 			}]
 	},
 	error: {}
