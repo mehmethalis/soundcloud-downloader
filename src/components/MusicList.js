@@ -48,7 +48,7 @@ class MusicList extends Component {
       <Container className='content-container '>
         {this.props.state.music.error.message && errorMessage}
         <Row className='content-row'>
-          {!this.props.state.music.fetching && card}
+          {!this.props.state.music.fetching  && !this.props.state.music.error.message ? card : console.log(this.props.state.music.error.message)}
           <div className='loader'>
             <HoopSpinner size={150} color="#ffffff" loading={this.props.state.music.fetching} />
           </div>
