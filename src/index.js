@@ -5,27 +5,25 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import dotenv from 'dotenv';
 
-import {createStore,applyMiddleware} from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import rootReducers from './reducers/rootReducers';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import reduxPromise from 'redux-promise-middleware';
-import {composeWithDevTools} from 'redux-devtools-extension';
-import {BrowserRouter} from 'react-router-dom';
-
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { BrowserRouter } from 'react-router-dom';
 
 dotenv.config();
 
-const store=createStore(rootReducers,composeWithDevTools(
-  applyMiddleware(reduxPromise, thunk,logger)
+const store = createStore(rootReducers, composeWithDevTools(
+  applyMiddleware(reduxPromise, thunk, logger)
 ));
-
 
 ReactDOM.render(
   <BrowserRouter>
     <Provider store={store}>
-        <App />
+      <App />
     </Provider>
   </BrowserRouter>,
   document.getElementById('root')
