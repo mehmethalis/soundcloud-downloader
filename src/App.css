@@ -138,3 +138,23 @@ h6 {
     color: #001529;
     display: block;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .header-row {
+        vertical-align: middle;
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+    }
+    .content {
+        padding: 25px;
+    }
+    .content-row {
+        text-align: center;
+        vertical-align: middle;
+        padding: 0;
+    }
+    .footer-link a {
+        margin-right: 10px;
+    }
+}
